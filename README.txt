@@ -18,3 +18,5 @@ Prevent spam users registering with fake emails or temporary emails
 * Feature: Block emails specified in configuration
 * Blocked message
 * Config URL redirect for spam register users
+* Spam emails, although not configured, are still blocked
+* Allows configuration to exclude specified email domains.

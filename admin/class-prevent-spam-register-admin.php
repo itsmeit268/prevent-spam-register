@@ -156,7 +156,7 @@ class Prevent_Spam_Register_Admin {
     public function prevent_spam_blocked_list_callback() {
         $settings = get_option($this->options, array());
         ?>
-        <p class="description">The terms below will not be allowed to be used during registration. You can add in full emails (i.e. foo@example.com) or domains (i.e. @domain.com), and partials (i.e. domain.com, or domain). Wildcards (i.e. *) will not work.</p>
+        <p class="description">The terms below will not be allowed during the registration process. You can add an email domain to block account registration.</p>
         <textarea id="prevent_spam_block_list" cols="56" rows="5" name="prevent_spam_settings[block_list]"><?php echo isset($settings["block_list"]) ? $settings["block_list"] : false; ?></textarea>
         <?php
     }
